@@ -11,79 +11,66 @@
 body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
 h1 { font-size: 30px; line-height: 1.15; margin: 0 0 6px; }
-h2 { font-size: 19px; margin: 32px 0 8px; }
+h2 { font-size: 19px; margin: 28px 0 8px; }
 p, li { max-width: 68ch; }
 ul { padding-left: 20px; }
 li { margin: 4px 0; }
 .meta { color: var(--muted); margin: 0 0 24px; }
 a { color: var(--accent); }
-table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
-th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
-th { color: var(--muted); font-weight: 600; }
-.wrap { overflow-x: auto; }
 footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Screenshot Alarm (Android app <code>app.snapalarm.clocker</code>) · Effective 24 October 2026</p>
-
-<p>Screenshot Alarm is an alarm clock for countdown timers you see on your screen. This policy explains what data the app uses, why, where it goes and how long it is kept.</p>
+<p class="meta">Screenshot Alarm (Android app <code>app.snapalarm.clocker</code>) · Effective 26 October 2026</p>
 
 <h2>Who is responsible</h2>
-<p>The app is published by Tomasz Kozlowski, Poznań, Poland, who is the data controller for the data described here. Contact: <a href="mailto:screenshotalarm@gmail.com">screenshotalarm@gmail.com</a>.</p>
+<p>Tomasz Kozlowski, Poznań, Poland, is the data controller. Contact: <a href="mailto:robertpattuson@gmail.com">tomekozlowski@gmail.com</a>.</p>
 
-<h2>Data that stays on your phone</h2>
-<p>Your alarms, notes, history, app openers, settings and the screenshots you take with the bubble are stored only on your phone. They are not backed up by the app and are deleted when you uninstall it. Reading timers from a screenshot happens on the phone first, with Google ML Kit text recognition, which does not send the image anywhere.</p>
+<h2>On your phone</h2>
+<p>Your alerts, notes, screenshots and settings stay on your phone and are deleted when you uninstall the app. Timers are read on the phone.</p>
+<p>The accessibility service, which you turn on yourself after an explanation in the app, is used only for features you start or schedule: the floating bubble and its screenshots, naming an alert after the app it came from and reopening that app, app openers you set, and saving text you select to Notes. It does not read passwords, messages or notifications. What it sees stays on your phone unless you send it as described below.</p>
 
-<h2>The accessibility service</h2>
-<p>The app asks you to turn on its accessibility service and shows what it does before you agree. The service is used only for features you start or schedule:</p>
+<h2>What we process</h2>
 <ul>
-<li>the floating bubble; when you tap it, the service takes a screenshot of the current screen so the app can read the timer on it;</li>
-<li>reading the name of the app and window in the foreground, so an alarm is labelled and can reopen the same app;</li>
-<li>app openers, which open an app you chose at a time you set and, for apps with several windows, tap the window you picked in Recents.</li>
-<li>if you turn it on in Notes, saving the text you selected or copied, or a screenshot, to a note when you hold the bubble. Notes stay on your phone.</li>
-</ul>
-<p>The service does not read passwords, messages or notifications, and nothing it sees leaves your phone except in the cases listed below.</p>
-
-<h2>Data sent to our server</h2>
-<p>Some features use a server run for the app on Cloudflare. It receives only what the feature needs:</p>
-<div class="wrap">
-<table>
-<tr><th>Feature</th><th>What is sent</th><th>How long it is kept</th></tr>
-<tr><td>Account</td><td>A random account ID created on your phone. It is not linked to your name, email or Google account.</td><td>While you use the app</td></tr>
-<tr><td>Hyper AI timer reading</td><td>The screenshot or the parts of it you marked, sent only when you use a Hyper scan. The server forwards it to the Google Gemini API to read the timers and returns the result. The image is not stored. The server logs that a scan happened and its size, to count your balance and costs.</td><td>Image: not stored. Scan log: 120 days</td></tr>
-<tr><td>Purchases</td><td>The Google Play purchase token, product and order number, checked with Google Play so the right scans or features are credited.</td><td>As long as needed for refunds, accounting and tax law</td></tr>
-<tr><td>Communities</td><td>Community name, the random IDs of members, and each alert a leader sends: its label, time and, if the leader adds one, a screenshot.</td><td>Alerts and their screenshots: 3 days after the alert time. Inactive members: removed after 30 days</td></tr>
-<tr><td>Gift codes</td><td>Which code was redeemed by which account ID.</td><td>As long as the code exists</td></tr>
-<tr><td>Abuse limits</td><td>A one-way hash of your IP address, used to stop automated abuse. The IP address itself is not stored.</td><td>7 days</td></tr>
-</table>
-</div>
-
-<h2>Google services in the app</h2>
-<ul>
-<li><strong>Google Play Billing</strong> handles payments. We never see your card or payment details.</li>
-<li><strong>Google AdMob</strong> shows ads in the free version. AdMob may collect your advertising ID, approximate location from your IP address, device information and how you interact with ads, for advertising, measurement and fraud prevention. In the European Economic Area, the UK and Switzerland the app asks for your consent through Google's consent message before personalised ads are shown, and you can change your choice later in the app. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that use its services</a>. You can reset or delete your advertising ID in your phone's settings.</li>
-<li><strong>Google Gemini API</strong> processes Hyper scan images only to return the timer reading, under Google's paid API terms.</li>
+<li><strong>A random app ID</strong> created on your phone. It is not linked to your name, email or Google account.</li>
+<li><strong>Screenshots you send for an AI timer reading</strong>, only when you use one. They are processed to return the result and are not stored. We keep a record that a reading was used, for your balance.</li>
+<li><strong>Purchases</strong>: the Google Play purchase details, to deliver what you bought. Payment details are handled by Google Play and never reach us.</li>
+<li><strong>Communities</strong>: the community name, member IDs, and the alerts and screenshots a leader sends to members.</li>
+<li><strong>Usage statistics</strong>: which features are used, for example alerts set, screens opened or purchases started, linked to the random app ID, to find problems and improve the app. Never screenshots, texts or app names. You can turn this off in the app under MORE; turning it off deletes what your phone sent.</li>
+<li><strong>Technical data</strong> such as your IP address, used briefly to prevent abuse.</li>
 </ul>
 
-<h2>Legal bases</h2>
-<p>We process data to provide the features you use and the purchases you make (performance of a contract), to prevent abuse and keep accounts for tax law (legitimate interests and legal obligations), and for personalised ads only with your consent.</p>
+<h2>Ads</h2>
+<p>The free version shows ads from Google AdMob, which may use your advertising ID, device information and approximate location from your IP address. In the EEA, the UK and Switzerland the app asks for your consent before personalised ads, and you can change it in the app. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that use its services</a>.</p>
 
-<h2>Sharing</h2>
-<p>We do not sell your data. It is shared only with the service providers named above (Cloudflare for hosting, Google for payments, ads and AI reading), who process it for these purposes. Some of them may process data outside the European Economic Area under the safeguards they provide, such as the EU Standard Contractual Clauses.</p>
+<h2>Why we may process it</h2>
+<p>To provide the features and purchases you ask for (contract), to keep the service secure and improve it with statistics you can switch off (legitimate interests), to keep tax records (legal obligation), and for personalised ads only with your consent.</p>
+
+<h2>Who receives it</h2>
+<p>Only service providers that host our server and handle AI readings, payments and ads for us, including Google. We do not sell data. Some providers may process data outside the EEA under safeguards such as the EU Standard Contractual Clauses.</p>
+
+<h2>How long we keep it</h2>
+<ul>
+<li>AI reading screenshots: not stored. Records of readings used: up to 4 months.</li>
+<li>Community alerts and their screenshots: 3 days. Inactive members: removed after 30 days.</li>
+<li>Usage statistics: up to 7 months.</li>
+<li>Abuse-prevention data: up to 7 days.</li>
+<li>Purchase records: as long as tax law requires.</li>
+<li>Your balance and app ID: while you use the app.</li>
+</ul>
 
 <h2>Your rights</h2>
-<p>You can ask for a copy of your data, its correction or deletion, or object to its processing, by writing to <a href="mailto:screenshotalarm@gmail.com">screenshotalarm@gmail.com</a>. Because the server does not know who you are, please include something that identifies your data, such as a Google Play order number or your community name. Uninstalling the app deletes everything stored on your phone. You also have the right to complain to the Polish data protection authority, the President of the Personal Data Protection Office (UODO), or the authority in your country.</p>
+<p>You can ask for a copy of your data, its correction or deletion, or object to its use, by writing to <a href="mailto:robertpattuson@gmail.com">robertpattuson@gmail.com</a>. Please include something that identifies your data, such as a Google Play order number or your community name. You may also complain to the Polish data protection authority (UODO) or the authority in your country.</p>
 
 <h2>Children</h2>
 <p>The app is not intended for children and we do not knowingly collect data from anyone under 16.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, the new version will be published on this page with a new effective date.</p>
+<p>Changes will be published on this page with a new effective date.</p>
 
-<footer><a href="./">Screenshot Alarm</a> · <a href="mailto:screenshotalarm@gmail.com">screenshotalarm@gmail.com</a></footer>
+<footer><a href="./">Screenshot Alarm</a> · <a href="mailto:robertpattuson@gmail.com">robertpattuson@gmail.com</a></footer>
 </main>
 </body>
 </html>
